@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="./css/style.css">
+
+  </head>
+  
+  <center>
+  
+  <body>
+    <h1 title class="title">Temporizador Java Script <img src="js.png" class="img"></h1>
+    <p class="title">Tempo restante: <span id="tempo"></span></p>
+    <button onclick="iniciarTempo()" class="botao">Iniciar</button>
+    <button onclick="pararTempo()" class="botao">Parar</button>
+    
+    <script>
+      var tempoRestante;
+      var intervalId;
+      
+      function iniciarTempo() {
+        tempoRestante = 60; // Tempo inicial em segundos
+        intervalId = setInterval(function() {
+          tempoRestante--;
+          document.getElementById("tempo").textContent = tempoRestante + "s";
+          if (tempoRestante == 0) {
+            pararTempo();
+          }
+        }, 1000);
+      }
+      
+      function pararTempo() {
+        clearInterval(intervalId);
+        document.getElementById("tempo").textContent = "";
+      }
+    </script>
+    </center>
+  </body>
+</html>

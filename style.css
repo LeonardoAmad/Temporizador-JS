@@ -1,0 +1,32 @@
+.title{
+    color: cornsilk;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body{
+    background-color: blueviolet;
+    margin-top: 200px;
+}
+
+.botao{
+    background-color: #4CAF50; /* cor de fundo */
+    border: none; /* sem borda */
+    color: white; /* cor do texto */
+    padding: 10px 20px; /* espaço interno */
+    text-align: center; /* alinhamento do texto */
+    text-decoration: none; /* sem decoração de link */
+    display: inline-block; /* exibição em linha */
+    font-size: 16px; /* tamanho da fonte */
+    border-radius: 4px; /* bordas arredondadas */
+    cursor: pointer; /* cursor ao passar por cima */
+    box-shadow: 2px 2px 4px #888888; /* sombra */
+}
+
+.botao:hover{
+    background-color: #3e8e41;
+  color: white;
+}
+
+.img{
+    width: 40px;
+}
